@@ -1,0 +1,113 @@
+<head>
+
+<!--import script files needed from plotly and bootstrap-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<title>World Bank Data Dashboard</title>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+
+<body>
+
+<!--middle section-->    
+<div class="container-fluid p-2" style="background-color: #a3a3e3;">
+
+    <h2 id="tag-line" class="text-center">World Bank Data Dashboard</h2>
+    <h4 id="tag-line" class="text-muted text-center"> Agriculture and Rural Development in Top 10 World Economies</h4>
+    
+</div>
+
+<div class="row">
+
+    <!--social media buttons column-->      
+    <div class="col-1" style="background-color: #dadae6;">
+
+        <div class="mt-4 pt-4">
+            <p class = "text-center mb-1">Data Source</p>
+            <a href="https://data.worldbank.org/indicator" target="_blank">
+                <img src="/static/img/worldbanklogo.png" alt="Worldbank" class="img-fluid mb-5 rounded mx-auto d-block" width = "110" height = "110">
+            </a>
+
+            <p class = "text-center mb-1">My Linkedin</p>
+            <a href="https://www.linkedin.com/in/kevin-vu-94182837/" target="_blank">
+                <img src="/static/img/linkedinlogo.png" alt="linkedin" class="img-fluid mb-5 rounded mx-auto d-block" width = "110" height = "110">
+            </a>
+
+            <p class = "text-center mb-1">My Github</p>
+            <a href="https://github.com/KEVIN-VN642" target="_blank">
+                <img src="/static/img/githublogo.png" alt="github" class="img-fluid rounded mx-auto d-block" width="110" height="110">
+            </a>  
+        </div>
+    </div>
+
+    <!--visualizations column-->        
+    <div class="col-11">
+        <!--charts-->       
+        <div id="charts" class="container mt-3 text-center">
+                    
+            <!--top two charts-->       
+            <div class="row">
+                <div class="col-6">
+                    <div id="{{ids[0]}}"></div>
+                </div>
+                <div class="col-6">
+                    <div id="{{ids[1]}}"></div>
+                </div>
+            </div>
+
+            <!--bottom two charts-->        
+            <div class="row mb-6">
+                <div class="col-6"> 
+                    <div id="chart3">
+                        <div id="{{ids[2]}}"></div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div id="chart4">
+                        <div id="{{ids[3]}}"></div>
+                    </div>
+                </div>
+            </div>
+           
+            <!--Create another row and place a fifth chart in that row-->        
+            <div class="row mb-6">
+              <div class="col-12">
+                <div id="chart5">
+                    <div id="{{ids[4]}}"></div>
+                </div>
+              </div>
+            </div>
+                  
+        </div>
+    <div>
+</div>
+
+<!--footer section-->               
+<div id="footer" class="container"></div>
+
+</body>
+
+
+<footer>
+
+    <script type="text/javascript">
+        // plots the figure with id
+        // id much match the div id above in the html
+        var figures = {{figuresJSON | safe}};
+        var ids = {{ids | safe}};
+        for(var i in figures) {
+            Plotly.plot(ids[i],
+                figures[i].data,
+                figures[i].layout || {});
+        }
+    </script>
+    
+</footer>
+
+
+</html>

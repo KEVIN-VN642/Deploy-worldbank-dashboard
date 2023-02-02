@@ -22,4 +22,9 @@ The data used in this project got from worldbank website, four indicators are us
 - Run worldbank.py script to visualize data
 
 ## 5. Results:
+### 5.1 Overview 1:
+![Overview 1](https://github.com/KEVIN-VN642/Deploy-worldbank-dashboard/blob/master/static/Overview1.png)
+
+### 5.2 Overview 2:
+![Overview 2](https://github.com/KEVIN-VN642/Deploy-worldbank-dashboard/blob/master/static/Overview2.png)
 

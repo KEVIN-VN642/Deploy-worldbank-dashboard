@@ -1,6 +1,5 @@
 # Worldbank Dashboard 
 
-Visit this URL to see the dashboard:  https://wb--dashboard.herokuapp.com/
 
 ### Table of Contents
 1. [Introduction](#intro)

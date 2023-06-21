@@ -9,8 +9,8 @@
 5. [Results and API](#results)
 
 ## 1. Introduction<a id = "intro"></a>:
-This project I built a dashboard to visualize some argiculture and rural indicators in top 10 economies (United States, China, Japan, Germany, United Kingdom, India, France, Brazil, Italy and Canada)
-Here is the URL to view the dashboard: https://wb-dashboard.azurewebsites.net/
+This project I built a dashboard to visualize some argiculture and rural indicators in top 10 economies (United States, China, Japan, Germany, United Kingdom, India, France, Brazil, Italy and Canada).
+Here is the URL to view the dashboard: https://wb-dashboard.azurewebsites.net/ (It might run slowly due to using free service).
 
 ## 2. Data <a id = "data"></a>:
 The data used in this project got from worldbank website, four indicators are used:

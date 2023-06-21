@@ -25,7 +25,7 @@ The data used in this project got from worldbank website, four indicators are us
 
 ## 4. How to run project<a id = "run"></a>:
 - First run ETL_Pipeline.ipynb in data folder to clean data and save results in database
-- Run worldbank.py script to visualize data
+- Run app.py script to visualize data
 
 ## 5. Results <a id="results"></a>:
 View the the dashboard (this may run a bit slow due to using free service), visit this URL: https://wb-dashboard.azurewebsites.net/

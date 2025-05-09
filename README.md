@@ -29,7 +29,7 @@ The data used in this project got from worldbank website, four indicators are us
 - Run app.py script to visualize data
 
 ## 5. Results <a id="results"></a>:
-View the the dashboard (this may run a bit slow due to using free service), visit this URL: https://wb-dashboard.azurewebsites.net/
+View the the dashboard (this may run a bit slow due to using free service), visit this URL: https://wbdashboard.onrender.com/
 ### 5.1 Overview 1:
 ![Overview 1](https://github.com/KEVIN-VN642/Deploy-worldbank-dashboard/blob/master/static/Overview1.png)
 

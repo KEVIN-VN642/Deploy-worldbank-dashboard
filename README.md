@@ -10,7 +10,7 @@
 
 ## 1. Introduction<a id = "intro"></a>:
 This project I built a dashboard to visualize some argiculture and rural indicators in top 10 economies (United States, China, Japan, Germany, United Kingdom, India, France, Brazil, Italy and Canada).
-Here is the URL to view the dashboard: https://wbdashboard.onrender.com/ (It might run slowly due to using free service).
+Here is the URL to view the dashboard: https://wbdashboard.onrender.com/ (It might take a minute to start due to using free service).
 
 ## 2. Data <a id = "data"></a>:
 The data used in this project got from worldbank website, four indicators are used:
